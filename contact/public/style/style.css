@@ -1,0 +1,92 @@
+.register-form{
+    max-width: 600px;
+    margin:20px auto;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    border-radius: 12px;
+    box-shadow: 0px 1px 13px #999;
+}
+
+fieldset{position: relative; border:none;}
+label{ font-size: 18px; display: inline-block; margin-bottom: 5px; }
+.name::after,
+.lname::after,
+.tel::after,
+.story::after,
+.country-style::after{
+  content: '*';
+  color:red;
+  font-size: 10px;
+  position: absolute;
+  margin-left: 3px;
+  top: 5px;
+}
+
+
+
+input[type='text'],
+input[type='tel'],
+textarea{
+  font-size: 16px;
+  margin-left:-10px;
+  width:100%;
+  padding:10px;
+  border-radius: 12px;
+  box-shadow: 0px 1px 13px #999;
+  border:none;
+}
+
+
+
+
+.button-submit-unique{
+  background-color: black !important;
+  color:#fff;
+  padding:10px;
+  width:80%;
+  display: inline-block;
+  margin:auto;
+  border-radius: 12px ;
+  transition: all .2s;
+}
+
+.button-submit-unique:hover{
+  background-color: #fff !important;
+  color:black;
+  border: 1px solid black;
+ 
+}
+
+.country,.interest{
+  margin: auto;
+}
+
+.error{
+  color:red;
+  font-size:15px;
+}
+
+.welcome{
+  font-size: 32px;
+  text-align: center;
+  margin:50px auto;
+ 
+  
+  animation: test .2s;
+}
+
+/* .active{
+    background-color: red;
+    transform: translateY(0);
+} */
+
+@keyframes test {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
